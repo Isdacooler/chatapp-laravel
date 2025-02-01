@@ -13,7 +13,7 @@ class MessageController extends Controller
 {
     public function index()
     {
-        $messages = Message::with('user')->latest()->take(5)->get(); // Eager load user, get latest 50, reverse for display
+        $messages = Message::with('user')->latest()->take(5)->get()->reverse();
         return MessageResource::collection($messages);
     }
 
