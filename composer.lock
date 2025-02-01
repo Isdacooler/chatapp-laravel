@@ -4,8 +4,71 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "240ad9144f5d517b28ed77dd4dcac6af",
+    "content-hash": "07b0bb8644cbe3fcfb0a24ad5ef3716c",
     "packages": [
+        {
+            "name": "accentinteractive/laravel-logcleaner",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/accentinteractive/laravel-logcleaner.git",
+                "reference": "cdfe14521c50d0018b71bf7255f400d7666a9a20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/accentinteractive/laravel-logcleaner/zipball/cdfe14521c50d0018b71bf7255f400d7666a9a20",
+                "reference": "cdfe14521c50d0018b71bf7255f400d7666a9a20",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+                "illuminate/filesystem": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "4.*|5.*|6.*|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "LaravelLogcleaner": "Accentinteractive\\LaravelLogcleaner\\LaravelLogcleanerFacade"
+                    },
+                    "providers": [
+                        "Accentinteractive\\LaravelLogcleaner\\LaravelLogcleanerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Accentinteractive\\LaravelLogcleaner\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joost van Veen",
+                    "email": "joost@accentinteractive.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Keep your laravel logs small and tidy.",
+            "homepage": "https://github.com/accentinteractive/laravel-logcleaner",
+            "keywords": [
+                "accentinteractive",
+                "laravel-logcleaner"
+            ],
+            "support": {
+                "issues": "https://github.com/accentinteractive/laravel-logcleaner/issues",
+                "source": "https://github.com/accentinteractive/laravel-logcleaner/tree/v1.5.0"
+            },
+            "time": "2024-08-22T07:41:10+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.1",
@@ -9140,12 +9203,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }

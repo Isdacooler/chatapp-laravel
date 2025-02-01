@@ -24,7 +24,7 @@ class MessageController extends Controller
         $message->save();
 
         // Broadcast the message using Reverb
-        broadcast(new MessageSent($message))->toOthers();
+        broadcast(new MessageSent($message));
 
         return new MessageResource($message);
     }
