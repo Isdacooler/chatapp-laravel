@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Events\MessageSent;
+use App\Events\UserTyping;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreMessageRequest;
 use App\Http\Resources\MessageResource;
@@ -30,5 +31,11 @@ class MessageController extends Controller
         broadcast(new MessageSent($message));
 
         return new MessageResource($message);
+    }
+
+    public function typing()
+    {
+        broadcast(new UserTyping());
+        return response()->noContent();
     }
 }
